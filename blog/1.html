@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Getting Started with Godot Engine - A comprehensive guide to setting up your first Godot project">
+    <title>Getting Started with Godot Engine - Game Developer Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+        
+        .blog-header {
+            margin-bottom: 3rem;
+        }
+        
+        .blog-meta {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .blog-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+        
+        .blog-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .blog-content {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .blog-content h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .blog-content h3 {
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--accent-color);
+        }
+        
+        .blog-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+        
+        .blog-content ul,
+        .blog-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .blog-content li {
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+        
+        .blog-content code {
+            background-color: var(--bg-alt);
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-family: 'Courier New', monospace;
+            color: var(--primary-color);
+        }
+        
+        .blog-content pre {
+            background-color: var(--bg-alt);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+        
+        .blog-content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        .blog-content blockquote {
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            color: var(--text-light);
+            font-style: italic;
+        }
+        
+        .blog-back {
+            display: inline-block;
+            margin-top: 3rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .blog-back:hover {
+            color: var(--primary-dark);
+            text-shadow: 0 0 10px var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">DEV.PORTFOLIO</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#blog" class="nav-link">Blog</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <header class="blog-header">
+            <div class="blog-meta">January 15, 2024 • 8 min read</div>
+            <h1 class="blog-title">Getting Started with Godot Engine</h1>
+            <div class="blog-tags">
+                <span class="tag">Godot</span>
+                <span class="tag">Tutorial</span>
+                <span class="tag">Beginner</span>
+            </div>
+        </header>
+        
+        <div class="blog-content">
+            <p>Godot Engine is a powerful, open-source game engine that has gained tremendous popularity in recent years. Whether you're a complete beginner or an experienced developer looking for a new tool, this guide will help you get started with Godot and create your first game.</p>
+            
+            <h2>Why Choose Godot?</h2>
+            <p>Before diving in, let's explore what makes Godot stand out:</p>
+            <ul>
+                <li><strong>Free and Open Source:</strong> No licensing fees, completely free to use for any project</li>
+                <li><strong>Lightweight:</strong> Small download size and efficient performance</li>
+                <li><strong>GDScript:</strong> A Python-like language designed specifically for game development</li>
+                <li><strong>Node-Based Architecture:</strong> Intuitive scene system for organizing game elements</li>
+                <li><strong>Cross-Platform:</strong> Export to Windows, macOS, Linux, Android, iOS, and Web</li>
+            </ul>
+            
+            <h2>Installation</h2>
+            <p>Getting Godot up and running is straightforward:</p>
+            <ol>
+                <li>Visit the <a href="https://godotengine.org/download" style="color: var(--primary-color);">official Godot website</a></li>
+                <li>Download the version that matches your operating system</li>
+                <li>Extract the downloaded file</li>
+                <li>Run the executable - no installation required!</li>
+            </ol>
+            
+            <blockquote>
+                <strong>Pro Tip:</strong> Godot is portable! You can run it from a USB drive or any folder without installing it on your system.
+            </blockquote>
+            
+            <h2>Creating Your First Project</h2>
+            <p>Let's create a simple "Hello World" game to get familiar with the interface:</p>
+            
+            <h3>Step 1: New Project</h3>
+            <p>When you launch Godot, you'll see the Project Manager window. Click "New Project" and choose a location for your project. Give it a name like "MyFirstGame".</p>
+            
+            <h3>Step 2: Understanding the Editor</h3>
+            <p>The Godot editor consists of several key areas:</p>
+            <ul>
+                <li><strong>Scene Tree:</strong> Shows the hierarchy of nodes in your current scene</li>
+                <li><strong>Inspector:</strong> Displays and edits properties of selected nodes</li>
+                <li><strong>Viewport:</strong> Where you see and interact with your scene</li>
+                <li><strong>Asset Browser:</strong> Manages your project's files and resources</li>
+            </ul>
+            
+            <h3>Step 3: Creating a Scene</h3>
+            <p>In Godot, everything is a scene. Let's create a simple scene with a player character:</p>
+            
+            <ol>
+                <li>Right-click in the Scene Tree and choose "Add Child Node"</li>
+                <li>Search for and add a "CharacterBody2D" node</li>
+                <li>Rename it to "Player"</li>
+                <li>Add a "Sprite2D" as a child of Player</li>
+                <li>Add a "CollisionShape2D" as another child</li>
+            </ol>
+            
+            <h3>Step 4: Adding Movement</h3>
+            <p>Let's add some basic movement to our player using GDScript:</p>
+            
+            <pre><code>extends CharacterBody2D
+
+const SPEED = 300.0
+
+func _physics_process(delta):
+    var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+    velocity = direction * SPEED
+    move_and_slide()</code></pre>
+            
+            <h3>Step 5: Running Your Game</h3>
+            <p>Press F5 or click the "Play" button in the top-right corner. Your game will launch, and you can move your character using the arrow keys!</p>
+            
+            <h2>Key Concepts to Master</h2>
+            
+            <h3>Nodes and Scenes</h3>
+            <p>Understanding the node system is crucial. Nodes are the building blocks of your game, and scenes are collections of nodes. Think of scenes as prefabs or templates that you can instantiate multiple times.</p>
+            
+            <h3>Signals</h3>
+            <p>Signals are Godot's implementation of the observer pattern. They allow nodes to communicate without tight coupling. For example, a button can emit a "pressed" signal that other nodes can listen to.</p>
+            
+            <h3>Resources</h3>
+            <p>Resources are data containers that can be shared across multiple nodes. Sprites, sounds, and materials are all examples of resources.</p>
+            
+            <h2>Next Steps</h2>
+            <p>Now that you've created your first game, here are some resources to continue your journey:</p>
+            <ul>
+                <li><a href="https://docs.godotengine.org/" style="color: var(--primary-color);">Official Godot Documentation</a></li>
+                <li><a href="https://www.youtube.com/@GDQuest" style="color: var(--primary-color);">GDQuest YouTube Channel</a></li>
+                <li><a href="https://github.com/godotengine/godot-demo-projects" style="color: var(--primary-color);">Official Demo Projects</a></li>
+            </ul>
+            
+            <h2>Conclusion</h2>
+            <p>Godot is an excellent choice for game developers of all skill levels. Its intuitive interface, powerful features, and supportive community make it easy to get started and grow as a developer. Remember, the best way to learn is by doing - so start building your dream game today!</p>
+        </div>
+        
+        <a href="../index.html#blog" class="blog-back">← Back to Blog</a>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Game Developer Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
