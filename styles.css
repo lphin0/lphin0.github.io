@@ -46,6 +46,7 @@ body {
     background: var(--bg-secondary);
     border-bottom: 6px solid var(--accent);
     z-index: 1000;
+    overflow: hidden;
 }
 
 .nav-container {
@@ -363,16 +364,26 @@ body {
         width: 100%;
         background: var(--bg-secondary);
         flex-direction: column;
+        display: none;
         padding: 25px;
         gap: 20px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
         border-bottom: 6px solid var(--accent);
     }
 
     .nav-menu.active {
-        max-height: 400px;
+        display: flex;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .hero-title {
