@@ -105,6 +105,7 @@ body {
     padding: 100px 20px 60px;
     background: var(--bg-primary);
     border-bottom: 6px solid var(--border);
+    scroll-margin-top: 0;
 }
 
 .hero-content {
@@ -127,6 +128,7 @@ body {
 /* Sections */
 .section {
     padding: 60px 0;
+    scroll-margin-top: 100px;
 }
 
 .section-alt {
@@ -344,10 +346,18 @@ body {
 .blog-post-title {
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     color: var(--accent);
     text-shadow: 3px 3px 0 var(--accent-secondary);
     line-height: 1.5;
+}
+
+.blog-post-summary {
+    color: var(--text-secondary);
+    font-size: 11px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-style: italic;
 }
 
 .blog-post-content {
