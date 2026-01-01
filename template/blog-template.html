@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- BLOG POST TEMPLATE INSTRUCTIONS:
+         1. Save this file as blog/YYYY-MM-DD.html (using the blog post date)
+         2. Update the title tag with "Blog Post Title - LPhin"
+         3. Update the meta description with a brief summary (1-2 sentences)
+         4. Update all meta tags (og and twitter) with the blog title and description
+         5. Update the og:url with the actual file path
+         6. Update the blog post date in the body
+         7. Update the blog post title in the body
+         8. Add a summary line under the title (this will appear in social media previews)
+         9. Add content paragraphs
+         10. Add images following the instructions in the content section
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post Title - LPhin</title>
     <meta name="description" content="Blog post summary goes here. This will appear in social media previews.">
     
-    <!-- Open Graph Meta Tags -->
+    <!-- Open Graph Meta Tags (for Facebook, LinkedIn, Discord, etc.) -->
+    <!-- Update og:title with the blog post title -->
+    <!-- Update og:description with the same text as the summary line -->
+    <!-- Update og:url with the actual URL: https://lphin.github.io/blog/YYYY-MM-DD.html -->
     <meta property="og:title" content="Blog Post Title">
     <meta property="og:description" content="Blog post summary goes here. This will appear in social media previews.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://lphin.github.io/blog/YYYY-MM-DD.html">
     
-    <!-- Twitter Card Meta Tags -->
+    <!-- Twitter Card Meta Tags (for Twitter/X) -->
+    <!-- Update twitter:title with the blog post title -->
+    <!-- Update twitter:description with the same text as the summary line -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Blog Post Title">
     <meta name="twitter:description" content="Blog post summary goes here. This will appear in social media previews.">
@@ -22,6 +39,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
+            <!-- Update nav-logo text if you want to change the brand name -->
             <a href="../index.html" class="nav-logo">Name</a>
             <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
@@ -29,6 +47,7 @@
                 <span></span>
             </button>
             <ul class="nav-menu">
+                <!-- Navigation links point to sections on the main page -->
                 <li><a href="../index.html#home" class="nav-link">Home</a></li>
                 <li><a href="../index.html#about" class="nav-link">About</a></li>
                 <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
@@ -41,11 +60,29 @@
     <main>
         <article class="blog-post">
             <div class="container">
+                <!-- Update the date below with the blog post date -->
                 <p class="blog-post-date">January 15, 2024</p>
+                
+                <!-- Update the title below with the blog post title -->
                 <h1 class="blog-post-title">Blog Post Title Goes Here</h1>
+                
+                <!-- IMPORTANT: The summary line below is used for social media previews -->
+                <!-- This text should be the same as the meta description and og:description -->
+                <!-- Keep it to 1-2 sentences, around 150-160 characters max -->
                 <p class="blog-post-summary">Blog post summary goes here. This will appear in social media previews.</p>
+                
                 <div class="blog-post-content">
+                    <!-- IMAGE EMBEDDING INSTRUCTIONS:
+                         - Place images in the blog/pictures/ folder
+                         - Name images using the format: [blog-date]-[number].avif
+                           Example: 2026-01-01-1.avif for the first image of the Jan 1, 2026 blog post
+                         - Use the <img> tag with class="blog-post-image"
+                         - Images will automatically be responsive and styled with borders
+                    -->
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <!-- Example image (remove this and replace with actual images) -->
+                    <!-- <img src="pictures/YYYY-MM-DD-1.avif" alt="Descriptive alt text" class="blog-post-image"> -->
                     
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     
@@ -58,6 +95,8 @@
                     <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                 </div>
                 
+                <!-- Back to Home button - links to blog section on main page -->
+                <!-- The text says "Back to Home" but navigates to #blog section -->
                 <div class="blog-post-footer">
                     <a href="../index.html#blog" class="back-link">← Back to Home</a>
                 </div>
