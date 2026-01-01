@@ -159,9 +159,22 @@ body {
 }
 
 .project-card {
-    background: var(--bg-primary);
+    background: var(--bg-tertiary);
     border: 6px solid var(--border);
     padding: 25px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    transform: translateX(5px);
+}
+
+.project-card:hover .project-title {
+    color: var(--accent);
 }
 
 .project-content {
@@ -172,7 +185,8 @@ body {
     font-weight: 400;
     margin-bottom: 15px;
     font-size: 14px;
-    color: var(--accent);
+    color: var(--text-primary);
+    transition: color 0.2s;
 }
 
 .project-description {
@@ -182,20 +196,6 @@ body {
     line-height: 1.8;
 }
 
-.project-link {
-    color: var(--text-primary);
-    text-decoration: none;
-    font-size: 10px;
-    display: inline-block;
-    padding: 10px 15px;
-    background: var(--accent);
-    border: 4px solid var(--accent);
-}
-
-.project-link:hover {
-    background: transparent;
-    color: var(--accent);
-}
 
 /* Blog List */
 .blog-list {
