@@ -208,6 +208,15 @@ body {
     padding: 25px;
     background: var(--bg-tertiary);
     border: 6px solid var(--border);
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+}
+
+.blog-item:hover {
+    border-color: var(--accent);
+    transform: translateX(5px);
 }
 
 .blog-date {
@@ -222,13 +231,19 @@ body {
     font-size: 14px;
 }
 
-.blog-link {
+.blog-title {
     color: var(--text-primary);
-    text-decoration: none;
+    transition: color 0.2s;
 }
 
-.blog-link:hover {
+.blog-item:hover .blog-title {
     color: var(--accent);
+}
+
+.blog-description {
+    color: var(--text-secondary);
+    font-size: 10px;
+    line-height: 1.8;
 }
 
 /* Contact */
