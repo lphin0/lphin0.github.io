@@ -46,25 +46,36 @@
         <section id="projects" class="section">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <a href="#" class="project-card">
+                <div class="projects-grid" id="projects-grid">
+                    <a href="#" class="project-card" data-page="1">
                         <div class="project-content">
                             <h3 class="project-title">Project One</h3>
                             <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </a>
-                    <a href="#" class="project-card">
+                    <a href="#" class="project-card" data-page="1">
                         <div class="project-content">
                             <h3 class="project-title">Project Two</h3>
                             <p class="project-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </a>
-                    <a href="#" class="project-card">
+                    <a href="#" class="project-card" data-page="2">
                         <div class="project-content">
                             <h3 class="project-title">Project Three</h3>
                             <p class="project-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                     </a>
+                    <a href="#" class="project-card" data-page="2">
+                        <div class="project-content">
+                            <h3 class="project-title">Project Four</h3>
+                            <p class="project-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pagination" id="projects-pagination">
+                    <button class="pagination-btn prev" disabled>Previous</button>
+                    <span class="pagination-info">Page 1 of 2</span>
+                    <button class="pagination-btn next">Next</button>
                 </div>
             </div>
         </section>
@@ -72,22 +83,42 @@
         <section id="blog" class="section">
             <div class="container">
                 <h2 class="section-title">Blog</h2>
-                <div class="blog-list">
-                    <a href="#" class="blog-item">
+                <div class="blog-list" id="blog-list">
+                    <a href="#" class="blog-item" data-page="1">
                         <p class="blog-date">January 15, 2024</p>
                         <h3 class="blog-title">Lorem Ipsum Dolor Sit Amet</h3>
                         <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </a>
-                    <a href="#" class="blog-item">
+                    <a href="#" class="blog-item" data-page="1">
                         <p class="blog-date">December 20, 2023</p>
                         <h3 class="blog-title">Ut Enim Ad Minim Veniam</h3>
                         <p class="blog-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </a>
-                    <a href="#" class="blog-item">
+                    <a href="#" class="blog-item" data-page="1">
                         <p class="blog-date">November 10, 2023</p>
                         <h3 class="blog-title">Duis Aute Irure Dolor</h3>
                         <p class="blog-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </a>
+                    <a href="#" class="blog-item" data-page="2">
+                        <p class="blog-date">October 5, 2023</p>
+                        <h3 class="blog-title">Excepteur Sint Occaecat</h3>
+                        <p class="blog-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </a>
+                    <a href="#" class="blog-item" data-page="2">
+                        <p class="blog-date">September 15, 2023</p>
+                        <h3 class="blog-title">Sed Ut Perspiciatis Unde</h3>
+                        <p class="blog-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    </a>
+                    <a href="#" class="blog-item" data-page="2">
+                        <p class="blog-date">August 20, 2023</p>
+                        <h3 class="blog-title">Nemo Enim Ipsam</h3>
+                        <p class="blog-description">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+                    </a>
+                </div>
+                <div class="pagination" id="blog-pagination">
+                    <button class="pagination-btn prev" disabled>Previous</button>
+                    <span class="pagination-info">Page 1 of 2</span>
+                    <button class="pagination-btn next">Next</button>
                 </div>
             </div>
         </section>
