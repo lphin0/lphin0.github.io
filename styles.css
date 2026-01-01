@@ -330,6 +330,68 @@ body {
     display: none !important;
 }
 
+/* Blog Post */
+.blog-post {
+    padding: 120px 0 60px;
+}
+
+.blog-post-date {
+    color: var(--text-secondary);
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-post-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: var(--accent);
+    text-shadow: 3px 3px 0 var(--accent-secondary);
+    line-height: 1.5;
+}
+
+.blog-post-content {
+    background: var(--bg-tertiary);
+    padding: 30px;
+    border: 6px solid var(--border);
+}
+
+.blog-post-content p {
+    color: var(--text-secondary);
+    line-height: 2;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.blog-post-content h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 0 15px;
+    color: var(--accent);
+    text-shadow: 2px 2px 0 var(--accent-secondary);
+}
+
+.blog-post-footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--accent);
+    border: 4px solid var(--accent);
+    transition: all 0.2s;
+}
+
+.back-link:hover {
+    background: transparent;
+    color: var(--accent);
+}
+
 /* Footer */
 .footer {
     padding: 40px 0;
@@ -395,6 +457,24 @@ body {
     .about-content {
         padding: 20px;
     }
+
+    .blog-post {
+        padding: 100px 0 40px;
+    }
+
+    .blog-post-title {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .blog-post-content {
+        padding: 20px;
+    }
+
+    .blog-post-content h2 {
+        font-size: 14px;
+        margin: 25px 0 12px;
+    }
 }
 
 /* Small Mobile */
@@ -445,6 +525,34 @@ body {
     }
 
     .pagination-btn {
+        padding: 8px 15px;
+        font-size: 9px;
+    }
+
+    .blog-post {
+        padding: 80px 0 30px;
+    }
+
+    .blog-post-title {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .blog-post-content {
+        padding: 15px;
+    }
+
+    .blog-post-content p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .blog-post-content h2 {
+        font-size: 12px;
+        margin: 20px 0 10px;
+    }
+
+    .back-link {
         padding: 8px 15px;
         font-size: 9px;
     }

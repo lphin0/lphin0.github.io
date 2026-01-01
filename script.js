@@ -39,6 +39,15 @@ function setupPagination(containerId, paginationId, itemsPerPage) {
     let currentPage = 1;
     const totalPages = Math.ceil(items.length / itemsPerPage);
     
+    // Hide pagination if there's only one page
+    if (totalPages <= 1) {
+        pagination.style.opacity = '0.3';
+        pagination.style.pointerEvents = 'none';
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+        return;
+    }
+    
     function updatePage() {
         items.forEach(item => {
             const itemPage = parseInt(item.dataset.page);
