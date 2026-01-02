@@ -30,4 +30,9 @@
     <meta name="twitter:description" content="{{ .Site.Params.description }}">
     {{ end }}
     
+    <!-- RSS Feed -->
+    {{ with .OutputFormats.Get "RSS" }}
+    <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
+    {{ end }}
+    
     <link rel="stylesheet" href="{{ "styles.css" | relURL }}">

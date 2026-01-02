@@ -14,10 +14,10 @@ publishDir = "public"
     subtitle = "An (un)professional game dev and nerd"
     
     # Social links
-    email = "your.email@example.com"
-    github = "https://github.com/yourusername"
-    linkedin = "https://linkedin.com/in/yourusername"
-    twitter = "https://twitter.com/yourusername"
+    email = "nhanphan98@protonmail.com"
+    github = "https://github.com/lphin0"
+    youtube = "https://youtube.com/@lphin98"
+    twitter = "https://twitter.com/lphin98"
 
 # Taxonomies
 [taxonomies]
@@ -44,8 +44,8 @@ publishDir = "public"
 
 # Output settings
 [outputs]
-    home = ["HTML"]
+    home = ["HTML", "RSS"]
     page = ["HTML"]
-    section = ["HTML"]
+    section = ["HTML", "RSS"]
     taxonomy = ["HTML"]
     term = ["HTML"]

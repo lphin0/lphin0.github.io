@@ -77,12 +77,13 @@
                     {{ if .Site.Params.github }}
                     <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
                     {{ end }}
-                    {{ if .Site.Params.linkedin }}
-                    <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+                    {{ if .Site.Params.youtube }}
+                    <a href="{{ .Site.Params.youtube }}" target="_blank" rel="noopener noreferrer" class="contact-link">YouTube</a>
                     {{ end }}
                     {{ if .Site.Params.twitter }}
                     <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener noreferrer" class="contact-link">Twitter</a>
                     {{ end }}
+                    <a href="{{ "index.xml" | relURL }}" target="_blank" rel="noopener noreferrer" class="contact-link">RSS Feed</a>
                 </div>
             </div>
         </div>
