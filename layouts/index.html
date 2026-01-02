@@ -72,16 +72,19 @@
                 <p>Find me on:</p>
                 <div class="contact-links">
                     {{ if .Site.Params.email }}
-                    <a href="mailto:{{ .Site.Params.email }}" class="contact-link">Email</a>
+                    <a href="mailto:{{ .Site.Params.email }}" class="contact-link">Email: {{ .Site.Params.email }}</a>
                     {{ end }}
                     {{ if .Site.Params.github }}
-                    <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+                    {{ $githubHandle := replaceRE "https://github.com/" "" .Site.Params.github }}
+                    <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub: {{ $githubHandle }}</a>
                     {{ end }}
                     {{ if .Site.Params.youtube }}
-                    <a href="{{ .Site.Params.youtube }}" target="_blank" rel="noopener noreferrer" class="contact-link">YouTube</a>
+                    {{ $youtubeHandle := replaceRE "https://youtube.com/@" "" .Site.Params.youtube }}
+                    <a href="{{ .Site.Params.youtube }}" target="_blank" rel="noopener noreferrer" class="contact-link">YouTube: @{{ $youtubeHandle }}</a>
                     {{ end }}
                     {{ if .Site.Params.twitter }}
-                    <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener noreferrer" class="contact-link">Twitter</a>
+                    {{ $twitterHandle := replaceRE "https://twitter.com/" "" .Site.Params.twitter }}
+                    <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener noreferrer" class="contact-link">X: {{ $twitterHandle }}</a>
                     {{ end }}
                     <a href="{{ "index.xml" | relURL }}" target="_blank" rel="noopener noreferrer" class="contact-link">RSS Feed</a>
                 </div>
