@@ -1,0 +1,51 @@
+baseURL = "https://lphin.github.io/"
+languageCode = "en-us"
+title = "LPhin"
+publishDir = "public"
+
+# Pagination settings
+[pagination]
+    pagerSize = 3
+    path = "page"
+
+# Site parameters
+[params]
+    description = "An (un)professional game dev and nerd"
+    subtitle = "An (un)professional game dev and nerd"
+    
+    # Social links
+    email = "your.email@example.com"
+    github = "https://github.com/yourusername"
+    linkedin = "https://linkedin.com/in/yourusername"
+    twitter = "https://twitter.com/yourusername"
+
+# Taxonomies
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
+# Markdown settings
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+    [markup.highlight]
+        style = "monokai"
+
+# Privacy settings
+[privacy]
+    [privacy.x]
+        disable = false
+        enableDNT = true
+        simple = true
+    [privacy.youtube]
+        disable = false
+        privacyEnhanced = true
+
+# Output settings
+[outputs]
+    home = ["HTML"]
+    page = ["HTML"]
+    section = ["HTML"]
+    taxonomy = ["HTML"]
+    term = ["HTML"]

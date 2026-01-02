@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="blog-post">
+    <div class="container-wide">
+        <p class="blog-post-date">{{ .Date.Format "January 2, 2006" }}</p>
+        <h1 class="blog-post-title">{{ .Title }}</h1>
+        {{ if .Params.summary }}
+        <p class="blog-post-summary">{{ .Params.summary }}</p>
+        {{ end }}
+        <div class="blog-post-content">
+            {{ .Content }}
+        </div>
+        
+        <div class="blog-post-footer">
+            <a href="{{ "/" | relURL }}#blog" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+</article>
+{{ end }}

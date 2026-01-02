@@ -1,0 +1,33 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    {{ if .Description }}
+    <meta name="description" content="{{ .Description }}">
+    {{ else if .Site.Params.description }}
+    <meta name="description" content="{{ .Site.Params.description }}">
+    {{ end }}
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    {{ if .Description }}
+    <meta property="og:description" content="{{ .Description }}">
+    {{ else if .Site.Params.description }}
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    {{ end }}
+    {{ if .IsPage }}
+    <meta property="og:type" content="article">
+    {{ else }}
+    <meta property="og:type" content="website">
+    {{ end }}
+    <meta property="og:url" content="{{ .Permalink }}">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    {{ if .Description }}
+    <meta name="twitter:description" content="{{ .Description }}">
+    {{ else if .Site.Params.description }}
+    <meta name="twitter:description" content="{{ .Site.Params.description }}">
+    {{ end }}
+    
+    <link rel="stylesheet" href="{{ "styles.css" | relURL }}">

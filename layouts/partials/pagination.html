@@ -1,0 +1,17 @@
+{{ if or .HasPrev .HasNext }}
+<div class="pagination">
+    {{ if .HasPrev }}
+    <a href="{{ .Prev.URL }}" class="pagination-btn prev">Previous</a>
+    {{ else }}
+    <button class="pagination-btn prev" disabled>Previous</button>
+    {{ end }}
+    
+    <span class="pagination-info">Page {{ .PageNumber }} of {{ .TotalPages }}</span>
+    
+    {{ if .HasNext }}
+    <a href="{{ .Next.URL }}" class="pagination-btn next">Next</a>
+    {{ else }}
+    <button class="pagination-btn next" disabled>Next</button>
+    {{ end }}
+</div>
+{{ end }}

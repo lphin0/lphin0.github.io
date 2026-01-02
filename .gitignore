@@ -1,18 +1,12 @@
+# Hugo build output
+public/
+
+# Hugo resources cache
+resources/
+
+# Hugo lock file
+hugo.lock
+
 # OS files
 .DS_Store
 Thumbs.db
-
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Logs
-*.log
-npm-debug.log*
-
-# Temporary files
-*.tmp
-*.temp

@@ -1,0 +1,91 @@
+{{ define "main" }}
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">{{ .Site.Title }}</h1>
+        <p class="hero-subtitle">{{ .Site.Params.subtitle }}</p>
+    </div>
+</section>
+
+<section id="about" class="section section-alt">
+    <div class="container-wide">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid" id="projects-grid">
+            {{ $projects := where .Site.RegularPages "Type" "projects" }}
+            {{ range $index, $project := $projects.ByWeight }}
+            {{ $pageNumber := (div (add $index 2) 2) }}
+            <a href="{{ $project.RelPermalink }}" class="project-card" data-page="{{ $pageNumber }}">
+                <div class="project-content">
+                    <h3 class="project-title">{{ $project.Title }}</h3>
+                    <p class="project-description">{{ $project.Description }}</p>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+        <div class="pagination" id="projects-pagination">
+            <button class="pagination-btn prev" disabled>Previous</button>
+            <span class="pagination-info">Page 1 of 2</span>
+            <button class="pagination-btn next">Next</button>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="section">
+    <div class="container">
+        <h2 class="section-title">Blog</h2>
+        <div class="blog-list" id="blog-list">
+            {{ $blogs := where .Site.RegularPages "Type" "blog" }}
+            {{ range $index, $blog := $blogs.ByDate.Reverse }}
+            {{ $pageNumber := (div (add $index 3) 3) }}
+            <a href="{{ $blog.RelPermalink }}" class="blog-item" data-page="{{ $pageNumber }}">
+                <p class="blog-date">{{ $blog.Date.Format "January 2, 2006" }}</p>
+                <h3 class="blog-title">{{ $blog.Title }}</h3>
+                {{ if $blog.Params.summary }}
+                <p class="blog-description">{{ $blog.Params.summary }}</p>
+                {{ else if $blog.Description }}
+                <p class="blog-description">{{ $blog.Description }}</p>
+                {{ end }}
+            </a>
+            {{ end }}
+        </div>
+        <div class="pagination" id="blog-pagination">
+            <button class="pagination-btn prev" disabled>Previous</button>
+            <span class="pagination-info">Page 1 of 1</span>
+            <button class="pagination-btn next" disabled>Next</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p>Find me on:</p>
+                <div class="contact-links">
+                    {{ if .Site.Params.email }}
+                    <a href="mailto:{{ .Site.Params.email }}" class="contact-link">Email</a>
+                    {{ end }}
+                    {{ if .Site.Params.github }}
+                    <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+                    {{ end }}
+                    {{ if .Site.Params.linkedin }}
+                    <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+                    {{ end }}
+                    {{ if .Site.Params.twitter }}
+                    <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener noreferrer" class="contact-link">Twitter</a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
