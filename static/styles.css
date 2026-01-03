@@ -19,7 +19,7 @@
 
 body {
     font-family: 'VT323', monospace;
-    line-height: 1.6;
+    line-height: 1.4;
     color: var(--text-primary);
     background: var(--bg-primary);
     font-size: 23px;
@@ -160,7 +160,7 @@ body {
 
 .about-content p {
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.4;
     margin-bottom: 20px;
 }
 
@@ -207,7 +207,7 @@ body {
     color: var(--text-secondary);
     font-size: 23px;
     margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 
@@ -256,7 +256,7 @@ body {
 .blog-description {
     color: var(--text-secondary);
     font-size: 23px;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 /* Contact */
@@ -365,7 +365,7 @@ body {
     color: var(--text-secondary);
     font-size: 24px;
     margin-bottom: 30px;
-    line-height: 1.6;
+    line-height: 1.4;
     font-style: italic;
 }
 
@@ -377,7 +377,7 @@ body {
 
 .blog-post-content p {
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.4;
     margin-bottom: 20px;
     font-size: 24px;
 }
@@ -523,7 +523,7 @@ body {
 /* Small Mobile */
 @media (max-width: 480px) {
     body {
-        line-height: 1.6;
+        line-height: 1.4;
     }
 
     .container,
@@ -566,7 +566,7 @@ body {
 
     .about-content p {
         font-size: 10px;
-        line-height: 1.6;
+        line-height: 1.4;
     }
 
     .project-card,
@@ -600,7 +600,7 @@ body {
 
     .blog-post-content p {
         font-size: 10px;
-        line-height: 1.6;
+        line-height: 1.4;
     }
 
     .blog-post-content h2 {
