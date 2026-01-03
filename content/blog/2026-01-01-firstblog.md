@@ -14,3 +14,5 @@ Mostly just about games though, both the process of making them, the things they
 First thing that will be coming in the near future is a blog on my first (second, really) video game ever. An analysis on where I went wrong, what I did right, what I learned in the process, all that stuff. I'll also upload the game itself here so everyone can try it.
 
 Look forward to it.
+
+In the meantime, here's my [youtube](https://www.youtube.com/@lphin98) and [X](https://x.com/lphin98), go give those a follow.

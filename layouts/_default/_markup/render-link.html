@@ -1,0 +1,71 @@
+{{ $url := .Destination }}
+{{ $text := .Text }}
+
+{{/* Check if it's a YouTube link */}}
+{{ $isYouTube := or (strings.HasPrefix $url "https://www.youtube.com/watch") (strings.HasPrefix $url "https://youtu.be/") (strings.HasPrefix $url "http://www.youtube.com/watch") (strings.HasPrefix $url "http://youtu.be/") }}
+
+{{/* Check if it's a Twitter/X link */}}
+{{ $isTwitter := or (strings.HasPrefix $url "https://twitter.com/") (strings.HasPrefix $url "https://x.com/") (strings.HasPrefix $url "http://twitter.com/") (strings.HasPrefix $url "http://x.com/") }}
+
+{{/* Only auto-embed if there's no custom text (bare URL) */}}
+{{ $isBareURL := or (eq $text "") (eq $text $url) }}
+
+{{ if and $isYouTube $isBareURL }}
+    {{/* Extract YouTube video ID */}}
+    {{ $videoID := "" }}
+    {{ if strings.Contains $url "youtu.be/" }}
+        {{ $videoID = strings.TrimPrefix "https://youtu.be/" $url }}
+        {{ $videoID = strings.TrimPrefix "http://youtu.be/" $videoID }}
+        {{ if strings.Contains $videoID "?" }}
+            {{ $videoID = index (strings.Split $videoID "?") 0 }}
+        {{ end }}
+    {{ else if strings.Contains $url "v=" }}
+        {{ $parts := strings.Split $url "v=" }}
+        {{ if gt (len $parts) 1 }}
+            {{ $videoID = index (strings.Split (index $parts 1) "&") 0 }}
+        {{ end }}
+    {{ end }}
+    
+    {{ if ne $videoID "" }}
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/{{ $videoID }}" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+    {{ else }}
+        <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $text | default $url }}</a>
+    {{ end }}
+{{ else if and $isTwitter $isBareURL }}
+    {{/* Extract Twitter username and tweet ID */}}
+    {{ $parts := strings.Split $url "/" }}
+    {{ $username := "" }}
+    {{ $tweetID := "" }}
+    
+    {{ range $i, $part := $parts }}
+        {{ if and (gt $i 0) (or (eq (index $parts (sub $i 1)) "twitter.com") (eq (index $parts (sub $i 1)) "x.com")) }}
+            {{ $username = $part }}
+        {{ end }}
+        {{ if eq $part "status" }}
+            {{ if lt (add $i 1) (len $parts) }}
+                {{ $tweetID = index $parts (add $i 1) }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    
+    {{ if and (ne $username "") (ne $tweetID "") }}
+        <div class="twitter-container">
+            <blockquote class="twitter-tweet" data-theme="dark">
+                <a href="https://twitter.com/{{ $username }}/status/{{ $tweetID }}"></a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    {{ else }}
+        <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $text | default $url }}</a>
+    {{ end }}
+{{ else }}
+    {{/* Regular link with custom text or non-embeddable URL */}}
+    <a href="{{ $url }}"{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $text | default $url }}</a>
+{{ end }}
