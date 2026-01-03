@@ -1,0 +1,15 @@
+{{- if not (.Get "link") -}}
+<div class="video-container">
+  <iframe 
+    src="https://www.youtube.com/embed/{{ .Get 0 }}" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+</div>
+{{- else -}}
+<a href="https://www.youtube.com/watch?v={{ .Get 0 }}" target="_blank" rel="noopener noreferrer">
+  Watch on YouTube
+</a>
+{{- end -}}
