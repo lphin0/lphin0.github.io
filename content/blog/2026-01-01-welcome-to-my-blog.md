@@ -27,4 +27,4 @@ In future posts, you can expect to find detailed explanations of my projects, co
 
 ## Getting Started
 
-If you're interested in following along, feel free to check out my projects section or reach out through the contact page. I'm always happy to connect with fellow developers and enthusiasts.
+If you're interested in following along, feel free to check out my projects section or reach out through the contact page. I'm always happy to connect with fellow developers and enthusiasts.on

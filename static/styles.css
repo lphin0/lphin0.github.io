@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 * {
     margin: 0;
@@ -18,11 +18,11 @@
 }
 
 body {
-    font-family: 'Press Start 2P', cursive;
-    line-height: 1.8;
+    font-family: 'VT323', monospace;
+    line-height: 1.6;
     color: var(--text-primary);
     background: var(--bg-primary);
-    font-size: 12px;
+    font-size: 23px;
 }
 
 .container {
@@ -61,6 +61,7 @@ body {
     color: var(--text-primary);
     text-decoration: none;
     font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .nav-menu {
@@ -74,6 +75,7 @@ body {
     text-decoration: none;
     font-size: 10px;
     transition: color 0.2s;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .nav-link:hover {
@@ -118,11 +120,13 @@ body {
     margin-bottom: 20px;
     color: var(--accent);
     text-shadow: 3px 3px 0 var(--accent-secondary);
+    font-family: 'Press Start 2P', cursive;
 }
 
 .hero-subtitle {
     color: var(--text-secondary);
     font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 /* Sections */
@@ -143,6 +147,7 @@ body {
     margin-bottom: 40px;
     color: var(--accent);
     text-shadow: 3px 3px 0 var(--accent-secondary);
+    font-family: 'Press Start 2P', cursive;
 }
 
 /* About */
@@ -155,7 +160,7 @@ body {
 
 .about-content p {
     color: var(--text-secondary);
-    line-height: 2;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
@@ -195,13 +200,14 @@ body {
     font-size: 14px;
     color: var(--text-primary);
     transition: color 0.2s;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .project-description {
     color: var(--text-secondary);
-    font-size: 10px;
+    font-size: 23px;
     margin-bottom: 20px;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 
@@ -231,17 +237,16 @@ body {
     color: var(--text-secondary);
     font-size: 10px;
     margin-bottom: 12px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .blog-title {
     font-weight: 400;
     margin-bottom: 10px;
     font-size: 14px;
-}
-
-.blog-title {
     color: var(--text-primary);
     transition: color 0.2s;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .blog-item:hover .blog-title {
@@ -250,8 +255,8 @@ body {
 
 .blog-description {
     color: var(--text-secondary);
-    font-size: 10px;
-    line-height: 1.8;
+    font-size: 23px;
+    line-height: 1.6;
 }
 
 /* Contact */
@@ -284,6 +289,7 @@ body {
     border-bottom: 2px solid var(--accent);
     padding-bottom: 2px;
     transition: all 0.2s;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .contact-link:hover {
@@ -324,6 +330,7 @@ body {
 .pagination-info {
     color: var(--text-secondary);
     font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 /* Hide items not on current page */
@@ -341,6 +348,7 @@ body {
     color: var(--text-secondary);
     font-size: 10px;
     margin-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .blog-post-title {
@@ -350,13 +358,14 @@ body {
     color: var(--accent);
     text-shadow: 3px 3px 0 var(--accent-secondary);
     line-height: 1.5;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .blog-post-summary {
     color: var(--text-secondary);
-    font-size: 11px;
+    font-size: 24px;
     margin-bottom: 30px;
-    line-height: 1.8;
+    line-height: 1.6;
     font-style: italic;
 }
 
@@ -368,9 +377,9 @@ body {
 
 .blog-post-content p {
     color: var(--text-secondary);
-    line-height: 2;
+    line-height: 1.6;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 24px;
 }
 
 .blog-post-content img {
@@ -391,6 +400,7 @@ body {
     margin: 30px 0 15px;
     color: var(--accent);
     text-shadow: 2px 2px 0 var(--accent-secondary);
+    font-family: 'Press Start 2P', cursive;
 }
 
 .blog-post-footer {
@@ -407,6 +417,7 @@ body {
     background: var(--accent);
     border: 4px solid var(--accent);
     transition: all 0.2s;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .back-link:hover {
@@ -466,14 +477,17 @@ body {
 
     .hero-title {
         font-size: 18px;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .hero-subtitle {
         font-size: 10px;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .section-title {
         font-size: 16px;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .about-content {
@@ -487,6 +501,7 @@ body {
     .blog-post-title {
         font-size: 16px;
         margin-bottom: 30px;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .blog-post-content {
@@ -501,11 +516,16 @@ body {
     .blog-post-content h2 {
         font-size: 14px;
         margin: 25px 0 12px;
+        font-family: 'Press Start 2P', cursive;
     }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
+    body {
+        line-height: 1.6;
+    }
+
     .container,
     .container-wide {
         padding: 0 10px;
@@ -521,10 +541,12 @@ body {
 
     .hero-title {
         font-size: 16px;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .hero-subtitle {
         font-size: 10px;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .section {
@@ -534,6 +556,7 @@ body {
     .section-title {
         font-size: 14px;
         margin-bottom: 30px;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .about-content {
@@ -543,7 +566,7 @@ body {
 
     .about-content p {
         font-size: 10px;
-        line-height: 1.8;
+        line-height: 1.6;
     }
 
     .project-card,
@@ -563,6 +586,7 @@ body {
     .blog-post-title {
         font-size: 14px;
         margin-bottom: 25px;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .blog-post-content {
@@ -576,12 +600,13 @@ body {
 
     .blog-post-content p {
         font-size: 10px;
-        line-height: 1.8;
+        line-height: 1.6;
     }
 
     .blog-post-content h2 {
         font-size: 12px;
         margin: 20px 0 10px;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .back-link {
