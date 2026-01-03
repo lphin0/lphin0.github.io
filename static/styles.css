@@ -493,6 +493,11 @@ body {
     .about-content {
         padding: 20px;
     }
+    
+    .about-content p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
 
     .blog-post {
         padding: 100px 0 40px;
@@ -506,6 +511,26 @@ body {
 
     .blog-post-content {
         padding: 20px;
+    }
+    
+    .blog-post-content p {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+    
+    .project-description {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    
+    .blog-description {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    
+    .blog-post-summary {
+        font-size: 19px;
+        line-height: 1.4;
     }
 
     .blog-post-content img {
@@ -565,7 +590,17 @@ body {
     }
 
     .about-content p {
-        font-size: 10px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    
+    .project-description {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    
+    .blog-description {
+        font-size: 16px;
         line-height: 1.4;
     }
 
@@ -599,7 +634,22 @@ body {
     }
 
     .blog-post-content p {
-        font-size: 10px;
+        font-size: 17px;
+        line-height: 1.4;
+    }
+    
+    .project-description {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    
+    .blog-description {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    
+    .blog-post-summary {
+        font-size: 17px;
         line-height: 1.4;
     }
 
