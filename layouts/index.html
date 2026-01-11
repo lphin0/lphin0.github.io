@@ -23,6 +23,11 @@
             {{ range $index, $project := $projects.ByWeight }}
             {{ $pageNumber := (div (add $index 2) 2) }}
             <a href="{{ $project.RelPermalink }}" class="project-card" data-page="{{ $pageNumber }}">
+                {{ if $project.Params.image }}
+                <div class="project-image">
+                    <img src="{{ $project.Params.image }}" alt="{{ $project.Title }}" loading="lazy">
+                </div>
+                {{ end }}
                 <div class="project-content">
                     <h3 class="project-title">{{ $project.Title }}</h3>
                     <p class="project-description">{{ $project.Description }}</p>
@@ -44,7 +49,7 @@
         <div class="blog-list" id="blog-list">
             {{ $blogs := where .Site.RegularPages "Type" "blog" }}
             {{ range $index, $blog := $blogs.ByDate.Reverse }}
-            {{ $pageNumber := (div (add $index 3) 3) }}
+            {{ $pageNumber := (div (add $index 2) 3) }}
             <a href="{{ $blog.RelPermalink }}" class="blog-item" data-page="{{ $pageNumber }}">
                 <p class="blog-date">{{ $blog.Date.Format "January 2, 2006" }}</p>
                 <h3 class="blog-title">{{ $blog.Title }}</h3>

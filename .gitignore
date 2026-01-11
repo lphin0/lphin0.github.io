@@ -10,3 +10,4 @@ hugo.lock
 # OS files
 .DS_Store
 Thumbs.db
+content/blog/*.kate-swp

@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="blog-post">
+    <div class="container-wide">
+        <!-- Project header with cover image -->
+        {{ if .Params.image }}
+        <div class="project-cover">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="eager">
+        </div>
+        {{ end }}
+        
+        <h1 class="blog-post-title">{{ .Title }}</h1>
+        {{ if .Params.summary }}
+        <p class="blog-post-summary">{{ .Params.summary }}</p>
+        {{ end }}
+        
+        <div class="blog-post-content">
+            {{ .Content }}
+        </div>
+        
+        <div class="blog-post-footer">
+            <a href="{{ "/" | relURL }}#projects" class="back-link">← Back to Projects</a>
+        </div>
+    </div>
+</article>
+{{ end }}

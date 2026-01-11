@@ -1,0 +1,10 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "Image" }}
+{{ $caption := .Get "caption" }}
+
+<div class="image-item">
+    <img src="{{ $src }}" alt="{{ $alt }}">
+    {{ with $caption }}
+        <p class="image-caption">{{ . }}</p>
+    {{ end }}
+</div>
