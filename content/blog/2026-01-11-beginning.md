@@ -130,6 +130,8 @@ I spent three hours the other day just playing it. Not testing. Playing. And whe
 
 It is raw. It is unfinished. But it is mine. And it's a start. The first step has been taken.
 
+If you want to try it out for yourself, you can [download DATAVOLVER here](/files/DATAVOLVER.tar.zst).
+
 ## Lessons
 
 You just have to get started. You can read about things, watch videos, and study books all you want. Everything changes when it's put into practice. My experience with software engineering should've told me this, yet I didn't think about it when starting this project.
