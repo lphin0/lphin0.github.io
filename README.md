@@ -257,8 +257,6 @@ This project uses multiple licenses for different components:
   - Applies to: `static/favicon*`, `static/apple-touch-icon.png`, `static/web-app-manifest-*.png`
 - **Font (Departure Mono):** SIL Open Font License 1.1 - see [static/fonts/DepartureMono-LICENSE](static/fonts/DepartureMono-LICENSE)
 
-For commercial use of blog content or released projects, please contact: nhanphan98@protonmail.com
-
 ## Credits
 
 - Built with [Hugo](https://gohugo.io/)
