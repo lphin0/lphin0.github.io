@@ -248,10 +248,21 @@ Check that meta tags are generated correctly in the HTML output. Ensure you have
 
 ## License
 
-This project is open source and available under the MIT License.
+This project uses multiple licenses for different components:
+
+- **Code (Hugo templates, CSS, JavaScript):** MIT License - see [LICENSE](LICENSE)
+- **Content (blog posts, images, project descriptions, released projects):** CC BY-NC-SA 4.0 - see [LICENSE-CONTENT.md](LICENSE-CONTENT.md)
+  - Applies to: Files in Releases, `content/` and `static/content/`
+- **Favicons:** CC BY-NC-SA 4.0 - see [LICENSE-CONTENT.md](LICENSE-CONTENT.md)
+  - Applies to: `static/favicon*`, `static/apple-touch-icon.png`, `static/web-app-manifest-*.png`
+- **Font (Departure Mono):** SIL Open Font License 1.1 - see [static/fonts/DepartureMono-LICENSE](static/fonts/DepartureMono-LICENSE)
+
+For commercial use of blog content or released projects, please contact: nhanphan98@protonmail.com
 
 ## Credits
 
 - Built with [Hugo](https://gohugo.io/)
-- Font: [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P)
-- Theme: Custom retro pixel-art design
+- Fonts:
+  - [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) by CodeMan38
+  - [VT323](https://fonts.google.com/specimen/VT323) by Peter Hull
+  - [Departure Mono](https://github.com/helenazhang/DepartureMono) by Helena Zhang (SIL OFL 1.1)
