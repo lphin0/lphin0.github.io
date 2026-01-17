@@ -47,6 +47,8 @@ I have a lot of experience with MonoGame. It's fantastic for 2D, but it is reall
 
 Fortunately, Godot was really picking up steam around then. I gave it a shot, and it was perfect for quickly prototyping. I picked the GDScript version since the docs recommended it, though I'm already eyeing C# for the next one.
 
+{{< img src="/content/2026-01-11-beginning/godot.avif" alt="Godot engine interface" caption="The Godot engine editor" >}}
+
 GDScript is actually nice. Just having static typing made me feel at home. The API is intuitive, and the scene based structure is brilliant. It makes object creation and instantiation in code feel almost effortless.
 
 However, I really don't like that it's interpreted. Game code is easily extractable, and there's a performance floor based on the engine itself. This is the primary reason I want to switch to C# and NativeAOT later.
@@ -58,6 +60,8 @@ I need to record this failure because it taught me a lot.
 I tried to learn shaders by using LLMs to write them for me. I don't know graphics programming. I thought the AI could bridge the gap.
 
 It was a month of garbage. Garbage that I couldn't debug because I didn't understand why it was garbage in the first place. I would ask for a glow effect and get a seizure inducing mess. I would ask for outlines and objects would disappear.
+
+{{< img src="/content/2026-01-11-beginning/broken-shaders.avif" alt="Broken shaders experiment" caption="A failed experiment. Looks OK, but strange in motion." >}}
 
 The problem was I had no baseline. I couldn't tell good code from bad code. Eventually, I accepted that a month had passed and I was exactly where I started, no shaders, no knowledge. I wasted that time because I tried to shortcut the learning process.
 
@@ -90,6 +94,8 @@ Another issue I've been unable to resolve so far is that I haven't been able to 
 ## The Feel
 
 Getting a basic arena with floating balls for enemies up and running was fast. That gave me time to tune the movement.
+
+{{< img src="/content/2026-01-11-beginning/the-beginning.avif" alt="The game in its early stages" caption="Early stages" >}}
 
 I added a slight momentum system. It gave the character real weight. Then I added a subtle camera tilt when strafing. A little bit of "bobbing" up and down while walking. It started to click for me. Game feel is all about these tiny, invisible details.
 
@@ -130,7 +136,7 @@ I spent three hours the other day just playing it. Not testing. Playing. And whe
 
 It is raw. It is unfinished. But it is mine. And it's a start. The first step has been taken.
 
-If you want to try it out for yourself, you can [download DATAVOLVER here](/files/DATAVOLVER.tar.zst).
+If you want to try it out for yourself, you can [download DATAVOLVER here](https://github.com/lphin0/lphin0.github.io/releases/tag/DATAVOLVER).
 
 ## Lessons
 
