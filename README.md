@@ -237,9 +237,9 @@ hugo version
 
 ### Images not loading
 
-Ensure images are in the `static/pictures/` directory and referenced with the correct path:
+Ensure images are in the `static/content/` directory and referenced with the correct path:
 ```markdown
-![Alt text](/pictures/filename.avif)
+![Alt text](/content/filename.avif)
 ```
 
 ### Social media previews not working
