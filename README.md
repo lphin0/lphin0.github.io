@@ -248,14 +248,71 @@ Check that meta tags are generated correctly in the HTML output. Ensure you have
 
 ## License
 
-This project uses multiple licenses for different components:
+This project uses a dual-licensing structure to appropriately protect different types of work:
 
-- **Code (Hugo templates, CSS, JavaScript):** MIT License - see [LICENSE](LICENSE)
-- **Content (blog posts, images, project descriptions, released projects):** CC BY-NC-SA 4.0 - see [LICENSE-CONTENT.md](LICENSE-CONTENT.md)
-  - Applies to: Files in Releases, `content/` and `static/content/`
-- **Favicons:** CC BY-NC-SA 4.0 - see [LICENSE-CONTENT.md](LICENSE-CONTENT.md)
-  - Applies to: `static/favicon*`, `static/apple-touch-icon.png`, `static/web-app-manifest-*.png`
-- **Font (Departure Mono):** SIL Open Font License 1.1 - see [static/fonts/DepartureMono-LICENSE](static/fonts/DepartureMono-LICENSE)
+### MIT License (Code & Templates)
+
+**Applies to:**
+- Hugo templates (`layouts/`)
+- CSS stylesheets (`static/styles.css`)
+- JavaScript files (`static/script.js`)
+- Other code files in this repository
+- Configuration files (e.g., `config.toml`, `.github/workflows/`)
+
+**What this means:**
+- You can freely use, modify, distribute, and sell the code
+- You must include the original copyright and license notice
+- The license is permissive and suitable for open-source projects
+
+See the full license in [LICENSE](LICENSE)
+
+### Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (Content)
+
+**Applies to:**
+- Blog posts and articles (`content/`)
+- Project descriptions and documentation (`content/`)
+- Images and media files (`static/content/`)
+- Favicons and site icons (`static/favicon*`, `static/apple-touch-icon.png`, `static/web-app-manifest-*.png`)
+- Released projects distributed via GitHub Releases
+- Any other creative content in this repository
+
+**What this means:**
+- **You CAN:**
+  - Share links to blog posts on social media
+  - Download and read content for personal use
+  - Modify or build upon the content for non-commercial purposes
+  - Create derivative works as long as you share them under the same license
+- **You CANNOT:**
+  - Use the content for commercial purposes
+  - Sell or monetize the content or derivatives
+  - Distribute modified versions under a different license
+  - Remove attribution or claim the work as your own
+
+See the full license in [LICENSE-CONTENT.md](LICENSE-CONTENT.md)
+
+### SIL Open Font License 1.1 (Fonts)
+
+**Applies to:**
+- Departure Mono font files (`static/fonts/`)
+
+**What this means:**
+- You can use, study, modify, and redistribute the font freely
+- The font can be bundled with software but cannot be sold by itself
+- Modified versions must use the same license
+- You cannot use the reserved font name for modified versions
+
+See the full license in [static/fonts/DepartureMono-LICENSE](static/fonts/DepartureMono-LICENSE)
+
+### Why This Structure?
+
+This dual-licensing approach ensures:
+1. **Code is freely reusable** - The MIT license allows others to use and build upon the Hugo templates and code for any purpose, including commercial projects
+2. **Content is protected** - The CC BY-NC-SA license prevents commercial exploitation of the blog posts, images, and creative work while still allowing sharing and non-commercial reuse
+3. **Clear boundaries** - Each component has an appropriate license that matches its nature and intended use
+
+### GitHub License Detection
+
+GitHub automatically detects the MIT license for this repository. The content license (CC BY-NC-SA 4.0) and font license (SIL OFL 1.1) are documented separately but are not auto-detected by GitHub's license system. Please review all license files to understand the complete licensing terms for this project.
 
 ## Credits
 
