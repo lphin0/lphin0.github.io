@@ -19,14 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-This license applies to:
-
-- Hugo templates (layouts/)
-- CSS stylesheets (static/styles.css)
-- JavaScript files (static/script.js)
-- Other code files in this repository
-
-For blog content and released projects, see LICENSE-CONTENT.md
